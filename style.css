@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
+body{
+    margin: 0px;
+}
+
+.mainContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2D4059;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing:border-box;
+    gap: 20px;
+}
+
+ .headerContainer{
+    display: flex;
+    background-color: #EA5455;
+    width: 96vw;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+text { 
+  fill: #2D4059;
+  filter: url('#money');
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 100px;
+  font-weight: 900;
+}
+
+button{
+    background-color: #F07B3F;
+    color: rgb(243, 240, 240);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+}
+
+.addBut{
+    min-height: 50px;
+    min-width: 220px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+button:hover{
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+    transform: translateY(-1.5px);
+    background-color: #EA5455;
+}
+
+button:active{
+    transform: translateY(1.5px);
+    box-shadow: none;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+}
+
+.cardContainer{
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    background-color: #FFD460;
+    color: whitesmoke;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    min-width: 71vw;
+    max-width: 71vw;
+    box-sizing:border-box;
+    padding: 55px;
+    /*  70px 55px 135px */
+    gap: 30px;
+}
+
+.card{
+    display: flex;
+    align-items: flex-start;
+    justify-items: center;
+    flex-direction: column;
+    background-color: #2D4059;
+    height: 300px;
+    width: 20%;
+    border-radius: 8px;
+    padding: 20px 20px 0px 20px;
+    font-size: 15px;
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card:hover{
+    box-shadow: 0 10px 10px 0 rgba(3, 2, 2, 0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+    transform: translateY(-1.5px);
+    background-color: #395a86;
+} 
+
+p{
+    margin: 15px;
+}
+
+input.checkbox{
+    height: 19px;
+    width: 19px;
+}
+
+.delBut{
+    margin-top: 10px;
+    min-height: 40px;
+    min-width: 140px;
+    font-size: 17px;
+    align-self: center;
+    transition: 0.2s;
+}
+
+.bg-modal{
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-cont{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFD460;
+    border-radius: 10px;
+    width: 400px;
+    height: 420px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+    padding: 20px;
+    padding-top: 27px;
+    align-items: center;
+    position: relative;
+    border: 5px solid #EA5455;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 45px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    color: #2D4059;
+}
+
+img{
+    width: 25%;
+    height: 20%;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+    border-radius: 10px;
+    background-color: #EA5455;
+}
+
+.textIn{
+    display: block;
+    font-size: 23px;
+    margin: 27px auto;
+    background-color: #3f5f88;
+    border-radius: 7px;
+    width: 350px;
+    height: 35px;
+    border: 2px solid #EA5455;
+    color: rgba(255, 255, 255, 0.972);
+    transition: 0.2s;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.972);
+    font-weight: 900;
+}
+
+.but-cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    margin-top: 38px;
+}
+
+.modal-but{
+    min-height: 45px;
+    min-width: 145px;
+    font-size: 20px;
+    align-self: center;
+    transition: 0.2s;
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
+
+svg {
+  background: #EA5455;
+}
+
+text {
+  fill: #2D4059;
+  filter: url('#money');
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 100px;
+  font-weight: 900;
+}
+ 
+html,body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2D4059;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.headerContainer{
+    display: flex;
+    background-color: #EA5455;
+    height: 20%;
+    width: 96%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.bodyContainer{
+    padding: 40px;
+    display: flex;
+    background-color: #2D4059;
+    height: 80%;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    gap: 30px;
+    min-height: 100%;
+    min-width: 80%;
+    flex-grow: 1;
+}
+
+button{
+    background-color: #F07B3F;
+    height: 50px;
+    width: 220px;
+    border-radius: 4px;
+    font-size: 20px;
+    color: rgb(243, 240, 240);
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+}
+
+button:hover{
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+    transform: translateY(-1.5px);
+    background-color: #EA5455;
+}
+
+button:active{
+    transform: translateY(1.5px);
+    box-shadow: none;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+}
+
+.cardCont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 70px ;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: #FFD460;
+    color: whitesmoke;
+    border-radius: 10px;
+    gap: 20px;
+    min-height: 100%;
+    min-width: 80%;
+}
+
+.card{
+    display: flex;
+    align-items: flex-start;
+    justify-items: start;
+    flex-direction: column;
+    background-color: #2D4059;
+    height: 260px;
+    width: 20%;
+    border-radius: 15px;
+    padding: 25px;
+    font-size: 22px;
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card:hover{
+    box-shadow: 0 10px 10px 0 rgba(3, 2, 2, 0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+    transform: translateY(-1.5px);
+    background-color: #486c9c;
+}
